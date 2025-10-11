@@ -1,0 +1,125 @@
+/* Full screen page layout */
+.customer-page {
+  min-height: 100vh;           /* full viewport height */
+  width: 100%;
+  background-color: #D0E7FF;   /* pastel/light blue */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header */
+.customer-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #001F3F; /* dark blue */
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Centered Search/Buttons */
+.center-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+.center-button-container input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #001F3F;
+}
+
+/* Buttons */
+.button-apply {
+  background-color: #001F3F; 
+  color: #357ec2;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-apply:hover {
+  background-color: #003366;
+}
+
+.button-secondary {
+  background-color: #B0CFFF;
+  color: #001F3F;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-secondary:hover {
+  background-color: #0f3b71;
+}
+
+.button-update {
+  background-color: #00ff40;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.button-reject {
+  background-color: #FF4136;
+  color: #e4e7e9;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Table styling */
+.table-container {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #E6F0FA; /* slightly darker box */
+  color: #001F3F;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.customers-table th,
+.customers-table td {
+  padding: 0.75rem;
+  border: 1px solid #4e5761;
+}
+
+.customers-table th {
+  background-color: #a3b5c7;
+  color: #0b0b0b;
+}
+
+/* Input fields inside the table */
+.customers-table input {
+  width: 90%;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #001F3F;
+  border-radius: 0.5rem;
+  background-color: #ffffff;   /* white background */
+  color: #001F3F;              /* dark blue text */
+  font-weight: 500;
+}
+
+/* Optional: focus effect */
+.customers-table input:focus {
+  outline: 2px solid #2563eb;  /* bright blue outline */
+  background-color: #f0f8ff;   /* light blue on focus */
+}
+

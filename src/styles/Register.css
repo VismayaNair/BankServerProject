@@ -1,0 +1,99 @@
+/* styles/Register.css */
+
+/* Main container */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D0E7FF; /* pastel blue background */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Form wrapper */
+.register-form-wrapper {
+  background-color: #090e5c;
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Form title */
+.register-form-wrapper h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #d8dfe6;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+.register-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #efecec;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #001F3F;       /* typed text dark */
+  background-color: #ffffff;
+}
+
+.register-input:focus {
+  border-color: #00cb73;
+  box-shadow: 0 0 0 3px rgba(0, 194, 203, 0.2);
+}
+
+/* Buttons */
+.register-button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #139d56;
+  color: #ebedf0;
+  font-size: 1.1rem;
+}
+
+.register-button:hover {
+  background-color: #001aad;
+  transform: scale(1.05);
+}
+
+/* Links */
+.register-link {
+  display: block;
+  margin-top: 1rem;
+  color: #00C2CB;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+/* Select dropdown */
+.register-input[type="select"],
+.register-input select {
+  color: #001F3F; /* dark text */
+  background-color: #7b2121; /* white background */
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-form-wrapper {
+    padding: 2rem 1.5rem;
+  }
+}

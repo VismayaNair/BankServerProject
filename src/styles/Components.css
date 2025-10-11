@@ -1,0 +1,95 @@
+/* Base button styles */
+.button {
+  padding: 0.75rem 2rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+/* APPROVE BUTTON - GREEN */
+.button-approve {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+.button-approve:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* REJECT BUTTON - RED */
+.button-reject {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.button-reject:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* APPLY BUTTON - BLUE */
+.button-apply {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+
+.button-apply:hover {
+  background-color: #0069d9;
+  transform: scale(1.05);
+}
+
+/* UPDATE BUTTON - WHITE background with blue text */
+.button-update {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.button-update:hover {
+  background-color: #e6f0ff;
+  transform: scale(1.05);
+}
+
+/* LOGIN BUTTON - GREEN */
+.button-login {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+.button-login:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* SECONDARY BUTTON (default neutral) */
+.button-secondary {
+  background-color: #ffffff;
+  color: #002A5C;
+}
+
+.button-secondary:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+/* Center all tables on the page */
+table {
+  margin: 2rem auto; /* top/bottom spacing + horizontal centering */
+  border-collapse: collapse; /* optional for cleaner table look */
+  width: 80%; /* adjust as needed */
+  text-align: center; /* center content inside table cells */
+}
+
+/* Optional: styling table borders and padding */
+table th,
+table td {
+  border: 1px solid #121111;
+  padding: 0.75rem 1rem;
+}
+
+/* Optional: add hover effect for rows */
+table tr:hover {
+  background-color: #f1f1f1;
+}

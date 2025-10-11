@@ -1,0 +1,116 @@
+/* App.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full-page layout */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #B3D9FF; /* Pastel blue background */
+  color: #11263e; /* Dark blue default text */
+}
+
+/* Center all main content */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-bottom: 20px;
+  color: #002A5C; /* Dark blue headings */
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #002A5C; /* Dark blue text */
+}
+
+/* Buttons */
+button {
+  background-color: #00C2CB; /* Teal button */
+  color: #001F3F; /* Dark blue text */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00A5AD; /* Darker teal on hover */
+  color: #001F3F;
+  border: none;
+}
+
+/* Input fields */
+input, select, textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #8a3e3e;
+  color: #002A5C; /* Dark blue text */
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Links */
+a {
+  color: #002A5C; /* Dark blue links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  color: #002A5C;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  input, select, textarea {
+    max-width: 100%;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+}

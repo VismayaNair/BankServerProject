@@ -1,0 +1,88 @@
+/* index.css */
+
+/* Reset default margins, paddings, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default font and background for entire app */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0B3D91; /* Dark blue background */
+  color: white; /* Default text color */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Links */
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FFC300; /* Highlight color on hover */
+  text-decoration: underline;
+}
+
+/* Default paragraph styling */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons default styling */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Form elements */
+input, textarea, select {
+  font-family: inherit;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  outline: none;
+}
+
+/* Remove outline on focus for buttons */
+button:focus {
+  outline: none;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,149 @@
+/* Entire page background */
+.review-applications-container {
+  width: 100%;              /* Full width */
+  min-height: 100vh;        /* Full viewport height */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #D0E7FF; /* Light blue background */
+  box-sizing: border-box;
+}
+
+/* Page heading */
+.review-applications-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #001F3F; /* Dark blue heading */
+  margin-bottom: 1.5rem;
+}
+
+/* Filters section */
+.review-applications-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.review-applications-filters input,
+.review-applications-filters select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;  /* Black border for inputs */
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  outline: none;
+  color: #164c6f;           
+  background-color: #ffffff; 
+}
+
+.review-applications-filters select option {
+  color: #164c6f;           
+  background-color: #ffffff; 
+}
+
+.review-applications-filters button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.review-applications-filters button.search-btn {
+  background-color: #19985f;
+  color: #fff;
+}
+
+.review-applications-filters button.search-btn:hover {
+  background-color: #003366;
+}
+
+.review-applications-filters button.reset-btn {
+  background-color: #19985f;
+  color: #fff;
+}
+
+.review-applications-filters button.reset-btn:hover {
+  background-color: #777777;
+}
+
+/* Grid for applications */
+.review-applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;  /* Full width */
+}
+
+/* Each application card */
+.application-card {
+  background-color: rgba(5, 70, 91, 0.9);
+  border: 2px solid #afcfee;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.application-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card heading */
+.application-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-darkblue);
+}
+
+/* Card details */
+.application-card p {
+  font-size: 1rem;
+  color: var(--color-darkblue);
+  margin-bottom: 0.5rem;
+}
+
+.application-card p strong {
+  font-weight: 600;
+}
+
+/* Status colors */
+.status-pending {
+  color: #FFB400;
+  font-weight: 700;
+}
+
+.status-approved {
+  color: #4CAF50;
+  font-weight: 700;
+}
+
+.status-rejected {
+  color: #FF4C4C;
+  font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .review-applications-container {
+    padding: 1rem;
+  }
+
+  .application-card {
+    padding: 1rem;
+  }
+
+  .application-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .application-card p {
+    font-size: 0.95rem;
+  }
+}

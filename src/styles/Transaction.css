@@ -1,0 +1,147 @@
+/* Main container */
+.transaction-container {
+  padding: 2rem;
+  background-color: #b9dafb;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Transaction History header */
+.transaction-container h2 {
+  color: #001F3F; /* dark blue */
+  font-size: 2rem; /* bigger font */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Highlight Current Balance box */
+.balance {
+  background: #ffffff;
+  border: 2px solid #0078d7;
+  color: #0078d7;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 120, 215, 0.2);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Account selection */
+.account-select {
+  margin-bottom: 20px;
+}
+
+.account-select select {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 250px;
+  color: #001F3F; /* dark blue text */
+  background-color: #ffffff; /* white background */
+}
+
+/* Transaction form: horizontal alignment */
+.transaction-form {
+  display: flex;
+  gap: 15px; /* spacing between inputs */
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.transaction-form input,
+.transaction-form select {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  flex: 1; /* take equal space */
+  min-width: 150px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* white background */
+  color: #001F3F; /* dark blue text */
+}
+
+/* Submit Button */
+.transaction-form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.transaction-form button:hover {
+  background-color: #0a8d0a;
+}
+
+/* Transaction table */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #001F3F;
+}
+
+.transaction-table th {
+  background-color: #19214f;
+  color: #edf0f4;
+  font-weight: 600;
+}
+
+.transaction-table tr:nth-child(even) {
+  background-color: #f0f8fa;
+}
+
+.transaction-table tr:hover {
+  background-color: #e0f3f4;
+}
+
+/* Filter / Search section */
+.transaction-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .transaction-filters {
+    flex-direction: column;
+  }
+
+  .transaction-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    font-size: 0.85rem;
+  }
+
+  .transaction-form {
+    flex-direction: column;
+  }
+}

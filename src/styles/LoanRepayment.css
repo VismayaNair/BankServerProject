@@ -1,0 +1,113 @@
+/* Full page centered */
+.loan-repayment-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #a7cff8; /* page background */
+}
+
+/* Main container */
+.loan-repayment-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+  background-color: #547ba1; /* light blue bg */
+  border-radius: 1rem;
+  box-shadow: 0 6px 15px rgba(227, 219, 219, 0.1);
+  color: #001F3F; /* dark blue text */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Header */
+.loan-repayment-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Message */
+.message {
+  text-align: center;
+  color: #FFB400;
+  font-weight: 600;
+}
+
+/* Loan selection */
+.loan-selection label,
+.repayment-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.loan-selection select,
+.repayment-form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #cedbe9;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+/* Button */
+.repayment-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.repayment-form button:hover {
+  background-color: #45A049;
+}
+
+/* Table */
+.repayments-table-container h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #001F3F; /* dark blue border */
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+table th {
+  background-color: #BFD9F5; /* lighter blue header */
+  font-weight: 700;
+  color: #001F3F; /* dark blue header text */
+}
+
+table tbody tr {
+  background-color: #F0F7FD;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #E6F0FA;
+}
+
+.no-data {
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+}

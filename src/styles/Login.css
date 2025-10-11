@@ -1,0 +1,136 @@
+/* styles/Login.css */
+
+/* Main container */
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D0E7FF; /* Light pastel blue background */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Form wrapper */
+.login-form-wrapper {
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Form title */
+.login-form-wrapper h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #001F3F; /* Dark blue heading */
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #001F3F; /* dark blue border */
+  font-size: 1rem;
+  outline: none;
+  color: #001F3F; /* dark blue text */
+  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent input */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-input::placeholder {
+  color: #001F3F; /* dark blue placeholder */
+  opacity: 0.7;
+}
+
+.login-input:focus {
+  border-color: #003366; /* darker blue on focus */
+  box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.2);
+}
+
+/* Buttons */
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #001F3F; /* dark blue button */
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.login-button:hover {
+  background-color: #003366;
+  transform: scale(1.05);
+}
+
+/* Links */
+.login-link {
+  display: block;
+  margin-top: 1rem;
+  color: #001F3F; /* dark blue */
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .login-form-wrapper {
+    padding: 2rem 1.5rem;
+    gap: 0.8rem;
+  }
+
+  .login-form-wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-input {
+    font-size: 0.95rem;
+    padding: 0.65rem 0.8rem;
+  }
+
+  .login-button {
+    font-size: 1rem;
+    padding: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .login-form-wrapper h2 {
+    font-size: 1.35rem;
+  }
+
+  .login-input {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .login-button {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+}

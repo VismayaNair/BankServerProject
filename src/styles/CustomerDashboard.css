@@ -1,0 +1,164 @@
+/* ====== MAIN CONTAINER ====== */
+.customer-dashboard-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  background-color: #d6e6f2; /* pastel blue background */
+  color: #063e77; /* dark blue text */
+  box-sizing: border-box;
+}
+
+/* ====== HEADER ====== */
+.customer-dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.customer-dashboard-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #001f3f;
+  margin-bottom: 0.5rem;
+}
+
+.customer-dashboard-header .welcome-msg {
+  font-size: 1rem;
+  color: #001f3f;
+}
+
+/* ====== PROFILE CARD ====== */
+.customer-dashboard-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.customer-dashboard-profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 1.2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b0d4ea; /* light pastel circle */
+  color: #001f3f;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.customer-dashboard-card h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #001f3f;
+}
+
+.customer-dashboard-card p {
+  font-size: 1rem;
+  color: #001f3f;
+  text-align: left;
+  margin: 0.4rem 0;
+  padding: 0 1rem;
+}
+
+/* ====== BUTTON GRID ====== */
+.customer-dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3.5rem;
+  width: 100%;
+  max-width: 800px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* ====== BUTTONS ====== */
+.customer-dashboard-button-primary {
+  width: 100%;
+  max-width: 220px;
+  background-color: #0e6d8d;
+  color: #ededee;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border: "1";
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.customer-dashboard-button-primary:hover {
+  background-color: #00a5ad;
+  transform: scale(1.05);
+}
+
+/* ====== LOADING & ERROR ====== */
+.customer-dashboard-loading,
+.customer-dashboard-error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #001f3f;
+}
+
+/* ====== RESPONSIVENESS ====== */
+@media (max-width: 1024px) {
+  .customer-dashboard-card {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-dashboard-container {
+    padding: 1.5rem;
+  }
+
+  .customer-dashboard-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .customer-dashboard-card {
+    width: 90%;
+  }
+
+  .customer-dashboard-cards {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .customer-dashboard-button-primary {
+    font-size: 0.9rem;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-dashboard-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .customer-dashboard-card {
+    padding: 1.5rem;
+  }
+
+  .customer-dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .customer-dashboard-button-primary {
+    width: 100%;
+    max-width: none;
+  }
+}

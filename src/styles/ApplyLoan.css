@@ -1,0 +1,87 @@
+.loan-apply-container {
+  min-height: 100vh;
+  background-color: #D0E7FF; /* pastel blue background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.loan-apply-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #001F3F; /* dark blue header text */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.loan-apply-form {
+  background-color: #9dbbd8; /* slightly darker blue box */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-grid .full-width {
+  grid-column: span 2;
+}
+
+.form-grid label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  color: #001F3F;
+}
+
+/* Input, textarea, and dropdown styling */
+.form-grid input,
+.form-grid textarea,
+.form-grid select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #001F3F;
+  color: #001F3F; /* dark text for visibility */
+  background-color: #e0f0ff; /* pastel blue background */
+  font-size: 16px;
+  outline: none;
+}
+
+/* Dropdown focus styling */
+.form-grid select:focus {
+  border-color: #3399ff;
+  box-shadow: 0 0 5px rgba(51, 153, 255, 0.5);
+}
+
+/* Button styling */
+.account-details-button-green {
+  background-color: #001F3F;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.account-details-button-green:hover {
+  background-color: #003366;
+}
+
+/* Message text */
+.loan-apply-message {
+  margin-top: 1rem;
+  color: #001F3F;
+  font-weight: bold;
+  text-align: center;
+}

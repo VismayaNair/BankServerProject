@@ -1,0 +1,131 @@
+/* styles/Dashboard.css */
+
+/* Main container */
+.dashboard-container {
+  padding: 2rem;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Dashboard header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  color: #001F3F;
+  font-weight: 700;
+}
+
+/* Cards */
+.dashboard-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h2 {
+  font-size: 1.25rem;
+  color: #00C2CB;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-card p {
+  font-size: 1rem;
+  color: #001F3F;
+}
+
+/* Tables */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #001F3F;
+}
+
+.dashboard-table th {
+  background-color: #00C2CB;
+  color: #001F3F;
+  font-weight: 600;
+}
+
+.dashboard-table tr:nth-child(even) {
+  background-color: #f0f8fa;
+}
+
+/* Buttons */
+.dashboard-button {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-button-primary {
+  background-color: #00C2CB;
+  color: #001F3F;
+}
+
+.dashboard-button-primary:hover {
+  background-color: #00A5AD;
+  transform: scale(1.05);
+}
+
+.dashboard-button-secondary {
+  background-color: #ffffff;
+  color: #001F3F;
+  border: 1px solid #ccc;
+}
+
+.dashboard-button-secondary:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Charts container */
+.dashboard-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-charts {
+    flex-direction: column;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,155 @@
+/* Main container with background image */
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: url("../assets/abstract-glowing-big-data-forex-600nw-2119930133.webp") no-repeat center center/cover;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Overlay to lighten the background image */
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+}
+
+/* Transparent box wrapper for title */
+.home-title-box {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title text */
+.home-title-box h1 {
+  color: #001F3F;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Subtitle text (no box now) */
+.home-subtitle {
+  position: relative;
+  z-index: 1;
+  color: #001F3F;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  width: 90%;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Logo */
+.home-logo {
+  width: 200px;
+  max-width: 25%;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Buttons container */
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* Common button style */
+.home-buttons button {
+  background-color: #17a20a; /* unified blue tone */
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 1.5rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 102px;
+  text-transform: uppercase;
+}
+
+/* Hover effects (same for both) */
+.home-buttons button:hover {
+  background-color: #0e1ca6; /* same hover color for all */
+  transform: scale(1.05);
+}
+
+/* Remove different colors for individual buttons */
+.button-login,
+.button-apply {
+  background-color: #172dd2;
+  color: white;
+}
+
+
+.button-apply {
+  background-color: #FF6B6B;
+  color: white;
+}
+
+.button-apply:hover {
+  background-color: #FF4C4C;
+}
+
+/* Footer */
+.home-footer-box {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  color: #001F3F;
+  font-weight: 700;
+  margin-top: auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .home-title-box h1 { font-size: 2.5rem; }
+  .home-subtitle { font-size: 1.3rem; }
+  .home-logo { width: 150px; }
+  .home-buttons button { font-size: 1.3rem; padding: 1.2rem 2.5rem; }
+}
+
+@media (max-width: 768px) {
+  .home-title-box h1 { font-size: 2rem; }
+  .home-subtitle { font-size: 1.1rem; }
+  .home-logo { width: 130px; }
+  .home-buttons button { font-size: 1.1rem; padding: 1rem 2rem; }
+}
+
+@media (max-width: 480px) {
+  .home-title-box h1 { font-size: 1.6rem; }
+  .home-subtitle { font-size: 1rem; }
+  .home-logo { width: 100px; }
+  .home-buttons button { font-size: 1rem; padding: 0.9rem 1.5rem; }
+}

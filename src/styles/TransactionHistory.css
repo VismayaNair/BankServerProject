@@ -1,0 +1,125 @@
+/* Page background */
+.transaction-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #D0E7FF; /* pastel blue */
+  color: #001F3F; /* default text color */
+}
+
+/* Main container */
+.transaction-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Page Header */
+.transaction-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #001F3F; /* dark blue */
+}
+
+/* Box for form or table */
+.transaction-box {
+  background-color: #E6F0FA; /* light blue box */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Current balance */
+.current-balance {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Form styling */
+.transaction-form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.75rem;
+}
+
+.transaction-form input,
+.transaction-form select {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #001F3F;
+  font-size: 1rem;
+  width: 100%;
+  color: #001F3F; /* dark blue text inside input/select */
+}
+
+.transaction-form select option {
+  color: #001F3F; /* dark blue for dropdown options */
+}
+
+.transaction-form button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.transaction-form button:hover {
+  background-color: #45A049;
+}
+
+/* Filter */
+.transaction-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.transaction-filter input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #001F3F;
+  width: 150px;
+  color: #001F3F; /* input text color */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #001F3F;
+}
+
+table th {
+  background-color: #BFD9F5; /* light header */
+  font-weight: 700;
+  color: #001F3F; /* dark blue */
+}
+
+table tbody tr {
+  background-color: #F0F7FD;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #E6F0FA;
+}
+
+.no-data {
+  text-align: center;
+  font-style: italic;
+  padding: 1rem;
+}
